@@ -1,0 +1,22 @@
+{% extends 'user_form/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}User Form{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
+{% endblock style %}
+
+{% block content %}
+<div class="container">
+    <div class="row align-items-center justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card p-5 shadow-sm text-center">
+                <h1 class="card-title">Index Page</h1>
+                <p><a href="{% url 'user-form' %}" class="btn-outline-info btn btn-md">Sumbit Form</a>
+                <a href="{% url 'user-form-list' %}" class="btn-outline-info btn btn-md">List Forms</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
